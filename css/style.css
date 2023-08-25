@@ -63,7 +63,7 @@ img {
 /* Header */
 
 .header-section {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header-container {
@@ -142,7 +142,7 @@ img {
 }
 
 .address-list-item {
-  color: #434455;
+  color: var(--secondary-color);
   font-style: initial;
 }
 .address-list-item:hover,
@@ -160,9 +160,18 @@ img {
 
 /* Hero */
 .hero {
+  max-width: 1440px;
+  margin: 0 auto;
   background: var(--brand-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero_bg.jpg);
   text-align: center;
   padding: 188px 0;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -186,6 +195,7 @@ img {
   cursor: pointer;
   border: 0;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .hero-btn-text {
   color: #ffffff;
@@ -194,9 +204,10 @@ img {
   line-height: 1.5;
   padding: 16px 32px;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--action-color);
 }
 
 /* Company standarts*/
@@ -213,8 +224,21 @@ img {
 
 .standarts-item {
   width: calc((100% - 72px) / 4);
-
   flex-grow: 0;
+}
+
+.standarts-item-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--logo-second-color);
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+.standarts-item-icon {
 }
 
 .header-two {
@@ -287,6 +311,39 @@ img {
 .team-list-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.socials {
+  display: flex;
+  justify-content: center;
+}
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  gap: 24px;
+}
+
+.socials-list-item {
+  display: flex;
+
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  background: var(--logo-color);
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+.socials-list-item:hover {
+  background-color: var(--action-color);
+}
+
+.icon-social {
 }
 
 .name {
@@ -307,6 +364,35 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+/* Customers */
+.customers-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.customers-list-item {
+}
+.customers-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+}
+.customers-list-item .customers-icon {
+  fill: currentColor;
+}
+.customers-link {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-list .customers-link:is(:hover, :focus) {
+  border-color: var(--action-color);
+  color: var(--action-color);
+}
+
 /* Filter */
 .filter-list {
   display: flex;
@@ -318,7 +404,7 @@ img {
 .filter-item {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-  background: #f4f4fd;
+  background: var(--logo-second-color);
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -344,7 +430,7 @@ img {
 
 .gallery-content {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--accent-color);
   border-top: none;
 }
 
@@ -361,11 +447,11 @@ img {
   padding: 100px 0;
 }
 
-/* .footer-container {
-  display: block;
-  margin-right: 1020px;
-  margin-left: 156px;
-} */
+.footer-container {
+  display: flex;
+  align-content: flex-start;
+  gap: 120px;
+}
 
 .logo-footer {
   display: block;
@@ -396,4 +482,45 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+}
+
+.footer-subtitle {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-list-item {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-item:hover {
+  background-color: #31d0aa;
+  border-radius: 50%;
+}
+
+.footer-icon-social {
+  width: 24px;
+  height: 24px;
 }
