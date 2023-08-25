@@ -339,7 +339,8 @@ img {
   border-radius: 50%;
 }
 
-.socials-list-item:hover .socials-list-item:focus {
+.socials-list-item:hover,
+.socials-list-item:focus {
   background-color: var(--action-color);
 }
 
@@ -516,7 +517,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-list-item:hover .footer-social-list-item:focus {
+.footer-social-list-item:focus,
+.footer-social-list-item:hover {
   background-color: #31d0aa;
   border-radius: 50%;
 }
