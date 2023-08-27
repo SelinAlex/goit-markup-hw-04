@@ -125,6 +125,24 @@ img {
 .nav-list-item:hover,
 .nav-list-item:focus {
   color: var(--action-color);
+  transition-duration: 250ms;
+}
+
+.current-page {
+  color: #404bbf;
+  position: relative;
+}
+
+.current-page::after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: border-radius 2px;
 }
 
 /* Address */
@@ -148,6 +166,7 @@ img {
 .address-list-item:hover,
 .address-list-item:focus {
   color: var(--action-color);
+  transition-duration: 250ms;
 }
 
 /* Main info */
@@ -208,6 +227,7 @@ img {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--action-color);
+  transition-duration: 250ms;
 }
 
 /* Company standarts*/
@@ -342,6 +362,7 @@ img {
 .socials-list-item:hover,
 .socials-list-item:focus {
   background-color: var(--action-color);
+  transition-duration: 250ms;
 }
 
 .icon-social {
@@ -358,18 +379,13 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
-  align-items: center;
-}
-
-.team-item {
-  width: calc((100% - 72px) / 4);
 }
 
 /* Customers */
 .customers-list {
   display: flex;
-  gap: 24px;
   justify-content: center;
+  gap: 24px;
 }
 .customers-list-item {
 }
@@ -393,6 +409,7 @@ img {
 .customers-list .customers-link:is(:hover, :focus) {
   border-color: var(--action-color);
   color: var(--action-color);
+  transition-duration: 250ms;
 }
 
 /* Filter */
@@ -422,6 +439,7 @@ img {
   background: var(--action-color);
   color: #ffffff;
   border: 1px solid transparent;
+  transition-duration: 250ms;
 }
 
 /* Gallery */
@@ -442,6 +460,14 @@ img {
   justify-content: space-between;
   column-gap: 24px;
   row-gap: 48px;
+}
+.gallery-item:is(:hover, :focus) {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  transition-duration: 250ms;
 }
 /* Footer */
 .footer {
@@ -521,6 +547,7 @@ img {
 .footer-social-list-item:hover {
   background-color: #31d0aa;
   border-radius: 50%;
+  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-social {
