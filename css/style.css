@@ -393,6 +393,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-content {
@@ -414,7 +415,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8px;
   gap: 24px;
 }
 
