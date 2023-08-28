@@ -432,6 +432,7 @@ img {
 }
 
 .icon-social {
+  fill: var(--logo-second-color);
 }
 
 .name {
@@ -627,4 +628,5 @@ img {
 .footer-icon-social {
   width: 24px;
   height: 24px;
+  fill: var(--logo-second-color);
 }
