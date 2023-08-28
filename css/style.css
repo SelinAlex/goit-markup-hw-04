@@ -559,6 +559,11 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.gallery-item-link:hover .gallery-item-text,
+.gallery-item-link:focus .gallery-item-text {
+  transform: translateY(100%);
+}
+
 .gallery-item-wrapper {
   position: relative;
   overflow: hidden;
