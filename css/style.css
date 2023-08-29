@@ -403,6 +403,7 @@ img {
 }
 
 .team-section {
+  padding-top: 120px;
   background-color: var(--logo-second-color);
 }
 
